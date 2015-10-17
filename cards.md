@@ -59,6 +59,12 @@ During review, this side is, at first, hidden.
 
 This attribute is the deck that this card belongs to.
 
+#### time_last_reviewed
+
+**Type:** Unix timestamp (integer)
+
+**Default value:** The same timestamp when the card was created.
+
 #### times_reviewed
 
 **Type:** Non-negative Integer
@@ -94,10 +100,11 @@ This attribute is the atomic variable that measures that the user does not know 
 
 The card's performance is measured using binary votes (successes and fails) that are akin to Reddit upvotes/downvotes.
 
-The score is calculated as follows:
+
+The (raw) score of a card is calculated as follows:
 
 ```
-score = (fails + 0.5) / (fails + successes + 1)
+raw_score = (fails + 0.5) / (fails + successes + 1)
 ```
 
 Note that this is considered to be the **raw score** of the card. A bias factor, and other elements, such as the time the card was last review, will be added to this *raw score* to calculate the **rank score**. The rank score adds ordering for each card, such that the card with the highest rank score would generally have the highest priority in being chosen for review.
