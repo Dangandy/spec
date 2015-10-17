@@ -107,11 +107,17 @@ The (raw) score of a card is calculated as follows:
 raw_score = (fails + 0.5) / (fails + successes + 1)
 ```
 
-Note that this is considered to be the **raw score** of the card. A bias factor, and other elements, such as the time the card was last review, will be added to this *raw score* to calculate the **rank score**. The rank score adds ordering for each card, such that the card with the highest rank score would generally have the highest priority in being chosen for review.
+The raw score has asymptotic upper bound of 1, and and asymptotic lower bound of 0: `0 < raw_score < 1`.
+
+Note that this is considered to be the **raw score** of the card, which gives an ordering to that card with respect to other raw scores of other cards. A card with high raw score indicates that the user is unable to recall the answer to it so easily.
+
+A card that has not been reviewed has a base raw score of `0.5`, which may either increase or decrease as the user reviews that same card.
+
+A bias factor, and other elements, such as the time the card was last review, will be added to this *raw score* to calculate the **rank score**. The rank score changes the ordering for each card, such that the card with the highest rank score would generally have the highest priority in being chosen for review.
 
 The derived score equation is based on the following references:
 
 - http://planspace.org/2014/08/17/how-to-sort-by-average-rating/
 - [How to Count Thumb-Ups and Thumb-Downs: User-Rating based Ranking of Items from an Axiomatic Perspective](http://www.dcs.bbk.ac.uk/~dell/publications/dellzhang_ictir2011.pdf) by D Zhang, R Mao, H Li, and J Mao.
-
+- http://www.evanmiller.org/how-not-to-sort-by-average-rating.html
 
