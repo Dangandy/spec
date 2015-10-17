@@ -37,7 +37,11 @@ The bias factor is chosen such that it:
 
 **Rationale:**
 
-The rank score adds ordering for each card within an abritrary set, such that the card with the highest rank score would generally have the highest priority in being chosen for review.
+- The rank score adds ordering for each card within an abritrary set, such that the card with the highest rank score would generally have the highest priority in being chosen for review.
+
+-   Logarithmic growth is chosen over time decay since: `Log(age of universe in seconds)/log(2) < 60`
+    
+    That is, time decay places the score dangerously close to the [underflow level](https://en.wikipedia.org/wiki/Arithmetic_underflow) of a floating-point system.
 
 ### Decide the method for choosing the next card
 
