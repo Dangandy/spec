@@ -1,6 +1,8 @@
 grokdb Specification
 ====================
 
+This repository contains specifications for a flashcard application called **grokdb**.
+
 ## Specs
 
 - [Decks](./decks.md)
