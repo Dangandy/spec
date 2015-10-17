@@ -26,5 +26,3 @@ Decks Specification
 **Type:** String
 
 **Required:** No
-
-
