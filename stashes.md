@@ -38,7 +38,7 @@ The name of the stash shall be non-empty.
 
 #### cards
 
-**Type:** `List<Card ids>``
+**Type:** `List<Card ids>`
 
 **Required:** No
 
