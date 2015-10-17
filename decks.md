@@ -29,7 +29,7 @@ Decks Specification
 
 #### children
 
-**Type:** List<Deck ids>
+**Type:** `List<Deck ids>`
 
 **Required:** No
 
