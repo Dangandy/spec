@@ -5,6 +5,7 @@ grokdb Specification
 
 - [Decks](./decks.md)
 - [Cards](./cards.md)
+- [Review](./review.md)
 
 ## License
 
