@@ -1,6 +1,11 @@
 Review Specification
 ====================
 
+## Selecting cards for review
+
+- Any and all cards in deck; and cards within their deck descendants.
+- Any and all cards in a stash (akin to a temporary deck).
+
 ## Choosing the next card for review
 
 For a given set of cards, the following algorithm will choose the next card for the user to review.
