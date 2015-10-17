@@ -59,11 +59,13 @@ If there are no cards that have been reviewed for more than *N* hours ago (i.e. 
 
 **Rationale:**
 
-Add a degree of [randomness](https://en.wikipedia.org/wiki/Randomized_algorithm) for choosing the next card.
+- Add a degree of [randomness](https://en.wikipedia.org/wiki/Randomized_algorithm) for choosing the next card.
+
+- Enforce an invariant such that there should always be a card to be reviewed next.
 
 #### Only new cards
 
-From a set of cards, select only new cards (i.e. cards that have never been reviewed), and randomly pick a new card.
+From a set of cards, select only new cards (i.e. cards that have never been reviewed), and randomly pick a new card from this selection.
 
 #### Cards reviewed for more than N hours ago
 
@@ -154,5 +156,13 @@ Unresolved questions
 RFCs
 ====
 
-- For "*Cards reviewed for more than N hours ago*"" method, discard M cards with the lowest scores, and randomly pick a card.
+- For "*Cards reviewed for more than N hours ago*"" method, discard M cards with the lowest scores, and randomly pick a card. How do we pick the integer M?
+
+Disclaimer
+==========
+
+The methods for ranking and select cards for review, as described above, are not based on any studies, nor do they mimic space repetition (nor make an attempt to do so). Nor are they based on pre-existing popular algorithms (e.g. [SM2 SuperMemo](http://www.supermemo.com/english/ol/sm2.htm), Anki, etc).
+
+
+
 
