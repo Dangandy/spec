@@ -26,3 +26,11 @@ Decks Specification
 **Type:** String
 
 **Required:** No
+
+#### children
+
+**Type:** List<Deck ids>
+
+**Required:** No
+
+Decks may be nested into another deck.
