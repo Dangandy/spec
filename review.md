@@ -155,6 +155,8 @@ Reset the card's success/fails as follows:
 - `fails = 2` (minor boost in the card's raw score w.r.t a card that was newly created)
 - `success = 0`
 
+This is useful for the user to let the application to forgo its historical knowledge of how well the user can recall the card.
+
 **Reset**
 
 Reset the card's success/fails as follows:
