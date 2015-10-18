@@ -1,17 +1,15 @@
 Cards Specification
 ===================
 
-## Cards
+## Attributes of a card
 
-### attributes
-
-#### id
+### id
 
 - **Type:** Non-negative Integer
 - **Unique:** Yes
 - **Required:** Yes
 
-#### title
+### title
 
 - **Type:** String
 - **Unique:** No
@@ -19,7 +17,7 @@ Cards Specification
 
 The title of the card shall be non-empty.
 
-#### front
+### front
 
 - **Type:** String
 - **Required:** No
@@ -28,7 +26,7 @@ This is the contents for the front-side of the card. The user may put a question
 
 During review, this side is shown first.
 
-#### back
+### back
 
 - **Type:** String
 - **Required:** No
@@ -37,12 +35,12 @@ This is the contents for the back-side of the card. The user may put an answer t
 
 During review, this side is, at first, hidden.
 
-#### description
+### description
 
 - **Type:** String
 - **Required:** No
 
-#### deck
+### deck
 
 - **Type:** Non-negative Integer
 - **Unique:** No
@@ -50,12 +48,12 @@ During review, this side is, at first, hidden.
 
 This attribute is the deck that this card belongs to.
 
-#### time_last_reviewed
+### time_last_reviewed
 
 - **Type:** Unix timestamp (integer)
 - **Default value:** The same timestamp when the card was created.
 
-#### times_reviewed
+### times_reviewed
 
 - **Type:** Non-negative Integer
 - **Unique:** No
@@ -63,7 +61,7 @@ This attribute is the deck that this card belongs to.
 
 This attribute is the number of times this card has been reviewed.
 
-#### successes 
+### successes 
 
 - **Type:** Non-negative Integer
 - **Unique:** No
@@ -71,7 +69,7 @@ This attribute is the number of times this card has been reviewed.
 
 This attribute is the atomic variable that measures how well the user knows this card; this is part of a score equation that measures this card's performance.
 
-#### fails 
+### fails 
 
 - **Type:** Non-negative Integer
 - **Unique:** No

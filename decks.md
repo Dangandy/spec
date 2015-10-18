@@ -1,28 +1,26 @@
 Decks Specification
 ===================
 
-## Decks
+## Attributes of a deck
 
-### attributes
-
-#### id
+### id
 
 - **Type:** Non-negative Integer
 - **Unique:** Yes
 - **Required:** Yes
 
-#### name
+### name
 
 - **Type:** String
 - **Unique:** No
 - **Required:** Yes
 
-#### description
+### description
 
 - **Type:** String
 - **Required:** No
 
-#### children
+### children
 
 - **Type:** `List<Deck ids>`
 - **Required:** No

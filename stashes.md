@@ -8,17 +8,15 @@ Stashes allow another dimension of organizing cards for review. A stash is akin 
 - "blitz/cram" reviews for a set of cards
 - Reviewing cross-cutting concepts. *Example:** Partial-differential equations for a physics course.
 
-## Stashes
+## Attributes of a stash
 
-### attributes
-
-#### id
+### id
 
 - **Type:** Non-negative Integer
 - **Unique:** Yes
 - **Required:** Yes
 
-#### name
+### name
 
 - **Type:** String
 - **Unique:** No
@@ -26,12 +24,12 @@ Stashes allow another dimension of organizing cards for review. A stash is akin 
 
 The name of the stash shall be non-empty.
 
-#### description
+### description
 
 - **Type:** String
 - **Required:** No
 
-#### cards
+### cards
 
 - **Type:** `List<Card ids>`
 - **Required:** No
