@@ -28,3 +28,7 @@ Decks Specification
 - **Required:** No
 
 Decks may be nested into another deck.
+
+## Root deck
+
+The application may have a root deck where any and all decks are a descendant of. The user may not be able to delete the root deck.
