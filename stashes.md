@@ -14,32 +14,26 @@ Stashes allow another dimension of organizing cards for review. A stash is akin 
 
 #### id
 
-**Type:** Non-negative Integer
-
-**Unique:** Yes
-
-**Required:** Yes
+- **Type:** Non-negative Integer
+- **Unique:** Yes
+- **Required:** Yes
 
 #### name
 
-**Type:** String
-
-**Unique:** No
-
-**Required:** Yes
+- **Type:** String
+- **Unique:** No
+- **Required:** Yes
 
 The name of the stash shall be non-empty.
 
 #### description
 
-**Type:** String
-
-**Required:** No
+- **Type:** String
+- **Required:** No
 
 #### cards
 
-**Type:** `List<Card ids>`
-
-**Required:** No
+- **Type:** `List<Card ids>`
+- **Required:** No
 
 List of cards within this stash.

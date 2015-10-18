@@ -7,30 +7,24 @@ Decks Specification
 
 #### id
 
-**Type:** Non-negative Integer
-
-**Unique:** Yes
-
-**Required:** Yes
+- **Type:** Non-negative Integer
+- **Unique:** Yes
+- **Required:** Yes
 
 #### name
 
-**Type:** String
-
-**Unique:** No
-
-**Required:** Yes
+- **Type:** String
+- **Unique:** No
+- **Required:** Yes
 
 #### description
 
-**Type:** String
-
-**Required:** No
+- **Type:** String
+- **Required:** No
 
 #### children
 
-**Type:** `List<Deck ids>`
-
-**Required:** No
+- **Type:** `List<Deck ids>`
+- **Required:** No
 
 Decks may be nested into another deck.

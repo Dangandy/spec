@@ -7,27 +7,22 @@ Cards Specification
 
 #### id
 
-**Type:** Non-negative Integer
-
-**Unique:** Yes
-
-**Required:** Yes
+- **Type:** Non-negative Integer
+- **Unique:** Yes
+- **Required:** Yes
 
 #### title
 
-**Type:** String
-
-**Unique:** No
-
-**Required:** Yes
+- **Type:** String
+- **Unique:** No
+- **Required:** Yes
 
 The title of the card shall be non-empty.
 
 #### front
 
-**Type:** String
-
-**Required:** No
+- **Type:** String
+- **Required:** No
 
 This is the contents for the front-side of the card. The user may put a question/hint for them to recall the answer to.
 
@@ -35,9 +30,8 @@ During review, this side is shown first.
 
 #### back
 
-**Type:** String
-
-**Required:** No
+- **Type:** String
+- **Required:** No
 
 This is the contents for the back-side of the card. The user may put an answer to the front-side of the card.
 
@@ -45,53 +39,43 @@ During review, this side is, at first, hidden.
 
 #### description
 
-**Type:** String
-
-**Required:** No
+- **Type:** String
+- **Required:** No
 
 #### deck
 
-**Type:** Non-negative Integer
-
-**Unique:** No
-
-**Required:** Yes
+- **Type:** Non-negative Integer
+- **Unique:** No
+- **Required:** Yes
 
 This attribute is the deck that this card belongs to.
 
 #### time_last_reviewed
 
-**Type:** Unix timestamp (integer)
-
-**Default value:** The same timestamp when the card was created.
+- **Type:** Unix timestamp (integer)
+- **Default value:** The same timestamp when the card was created.
 
 #### times_reviewed
 
-**Type:** Non-negative Integer
-
-**Unique:** No
-
-**Default value:** 0
+- **Type:** Non-negative Integer
+- **Unique:** No
+- **Default value:** 0
 
 This attribute is the number of times this card has been reviewed.
 
 #### successes 
 
-**Type:** Non-negative Integer
-
-**Unique:** No
-
-**Default value:** 0
+- **Type:** Non-negative Integer
+- **Unique:** No
+- **Default value:** 0
 
 This attribute is the atomic variable that measures how well the user knows this card; this is part of a score equation that measures this card's performance.
 
 #### fails 
 
-**Type:** Non-negative Integer
-
-**Unique:** No
-
-**Default value:** 0
+- **Type:** Non-negative Integer
+- **Unique:** No
+- **Default value:** 0
 
 This attribute is the atomic variable that measures that the user does not know this card; this is part of a score equation that measures this card's performance.
 
