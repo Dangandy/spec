@@ -6,6 +6,20 @@ Review Specification
 - Any and all cards in deck; and cards within their deck descendants.
 - Any and all cards in a stash (akin to a temporary deck).
 
+## Cached review card
+
+For a deck or stash, a card that's being reviewed may be cached; if it exists, that card is given to the user for review. However, the cached card may be invalid. See **Cache invalidation** below.
+If cached card doesn't exist, select the next card for review as described below.
+
+It's useful to cache the card being reviewed, because the next card chosen for review may change every single time the method described below is processed.
+
+### Cache invalidation
+
+Ways to invalidate a card that is cached to be reviewed within either a deck or stash
+
+- The card in question no longer exists within the deck being reviewed or any of its descendants
+- The card in question no longer exists within the stash being reviewed
+
 ## Choosing the next card for review
 
 For a given set of cards, the following algorithm will choose the next card for the user to review.
@@ -105,6 +119,8 @@ purgatory_size = ceil(0.2 * number_of_cards)
 The purgatory region is sized and named so that cards with high recall rates (i.e. have low rank/raw score) usually stay within this region for quite a while. Nonetheless, any card within this region will have a chance of being reviewed.
 
 ## Reviewing a card
+
+After the card has been reviewed, remove that card from the review cache of any and all stashes and decks.
 
 The user may decide various options on how they score their performance on a card:
 
