@@ -177,7 +177,7 @@ RFCs
 Disclaimer
 ==========
 
-The methods for ranking and select cards for review, as described above, are not based on any studies, nor do they mimic space repetition (nor make an attempt to do so). Nor are they based on pre-existing popular algorithms (e.g. [SM2 SuperMemo](http://www.supermemo.com/english/ol/sm2.htm), Anki, etc).
+The methods for ranking and selecting cards for review, as described above, are not based on any studies, nor do they attempt to mimic/model space repetition. Nor are they based on pre-existing popular algorithms (e.g. [SM2 SuperMemo](http://www.supermemo.com/english/ol/sm2.htm), Anki, etc).
 
 
 
