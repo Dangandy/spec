@@ -146,6 +146,6 @@ POST /decks
 
 Name        | Type                 | Description
 ------------|----------------------|------------------------------------------------------------
-name        | String               | Name of the deck **(required)**
+name        | Non-empty String     | Name of the deck **(required)**
 description | String               | Description of the deck **(optional)**
 parent      | Non-negative integer | Parent deck that the new deck belongs to **(required)**
