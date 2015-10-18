@@ -80,7 +80,7 @@ This attribute is the atomic variable that measures that the user does not know 
 
 ## Card Performance
 
-The card's performance is measured using binary votes (successes and fails) that are akin to Reddit upvotes/downvotes.
+The card's performance (i.e. how well the user knows this card) is measured using binary votes (successes and fails) that are akin to Reddit upvotes/downvotes.
 
 
 The (raw) score of a card is calculated as follows:
