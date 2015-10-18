@@ -42,7 +42,7 @@ GET /decks/:id
 
 **Responses**
 
-If the card doesn't exist, `404` status code is returned:
+If the card doesn't exist, `404` (Not found) status code is returned:
 
 ```json
 HTTP/1.1 404 Not Found
@@ -57,7 +57,7 @@ Date: Sun, 18 Oct 2015 02:44:37 GMT
 }
 ```
 
-Otherwise, returns `200` status code with the deck contents:
+Otherwise, returns `200` (Ok) status code with the deck contents:
 
 ```json
 HTTP/1.1 200 OK
@@ -91,7 +91,7 @@ decks | List<deckID> | A list of comma-separated deck ids (e.g. `?decks=1,2,3`)
 
 **Responses**
 
-If any of the deck ids does not exist, an error response is given:
+If any of the deck ids does not exist, the `404` (Not found) status code is returned:
 
 ```json
 HTTP/1.1 404 Not Found
@@ -106,7 +106,7 @@ Date: Sun, 18 Oct 2015 02:49:33 GMT
 }
 ```
 
-If all the given deck ids exist, an array of the output identical to doing `GET /decks/:id` requests for each id is returned:
+If all the given deck ids exist, an array of the output identical to doing `GET /decks/:id` requests for each id is returned with `200` (Ok) status code:
 
 ```json
 HTTP/1.1 200 OK
@@ -149,3 +149,13 @@ Name        | Type                 | Description
 name        | Non-empty String     | Name of the deck **(required)**
 description | String               | Description of the deck **(optional)**
 parent      | Non-negative integer | Parent deck that the new deck belongs to **(required)**
+
+**Responses**
+
+If any of the JSON input parameters are not satisfied or are invalid, a `400` (Bad Request) status code is returned.
+
+If a deck has been successfully created, then a `201` (Created) status code is returned, along with the JSON output of the newly created deck.
+
+
+
+
